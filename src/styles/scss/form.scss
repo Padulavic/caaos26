@@ -1,0 +1,53 @@
+@import './variables';
+
+$formComponentWidth: 300px;
+$formComponentHeight: 30px;
+
+.form_label{
+    font-family: $merchantFont;
+    font-size: 2em;
+};
+
+.form_select{
+    display: block;
+    width: $formComponentWidth;
+    height: $formComponentHeight;
+    border: 1px solid $p2_grayPurple;
+    background: $p2_yellow;
+    border-radius: 10px;
+    font-family: $mainFont;
+    font-size: 1.5em;
+};
+
+.form_range{
+    display: block;
+    -webkit-appearance: none;
+    background: $p2_yellow;
+    outline: none;
+    // opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    width: $formComponentWidth;
+    height: $formComponentHeight;
+
+}
+
+// .form_range:hover {
+//     opacity: 1;
+// }
+
+.form_range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: $p2_grayPurple;
+    cursor: pointer;
+}
+
+.form_range::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: $p2_grayPurple;
+    cursor: pointer;
+}

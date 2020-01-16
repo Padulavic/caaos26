@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css?family=Exo+2|Grenze|Herr+Von+Muellerhoff|Monsieur+La+Doulaise|Press+Start+2P|Tangerine&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Exo+2|Grenze|Herr+Von+Muellerhoff|Monsieur+La+Doulaise|Press+Start+2P|Tangerine&display=swap");
+.form_label {
+  font-family: "Grenze", serif;
+  font-size: 2em;
+}
+
+.form_select {
+  display: block;
+  width: 300px;
+  height: 30px;
+  border: 1px solid #37335A;
+  background: #AA9553;
+  border-radius: 10px;
+  font-family: "Exo 2", sans-serif;
+  font-size: 1.5em;
+}
+
+.form_range {
+  display: block;
+  -webkit-appearance: none;
+  background: #AA9553;
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  width: 300px;
+  height: 30px;
+}
+
+.form_range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #37335A;
+  cursor: pointer;
+}
+
+.form_range::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #37335A;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=index.css.map */
