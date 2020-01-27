@@ -4,7 +4,7 @@ import {get} from 'axios';
 
 export default class SelectFromFB extends Component{
 
-    state = {opstionsArray: []}
+    state = {optionsArray: []}
 
     async componentDidMount() { 
         const data = await get(this.props.url).then(response => response.data)
@@ -12,12 +12,11 @@ export default class SelectFromFB extends Component{
         this.setState({optionsArray : jsxData});
     }
 
-
     render(){
         return(
-        <div className="selectFromFB_wrapper">
+        <div className="form_label-wrapper">
             <label className="form_label">{this.props.label}</label>
-            <select className="form_select">
+            <select id={this.props.id} className="form_select">
                 {this.state.optionsArray}
             </select>
         </div>

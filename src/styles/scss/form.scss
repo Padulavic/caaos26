@@ -4,26 +4,40 @@ $formComponentWidth: 300px;
 $formComponentHeight: 30px;
 
 .form_label{
-    font-family: $merchantFont;
-    font-size: 2em;
+    font-family: $mainFont;
+    letter-spacing: 5px;
+    color: $p3_5;
 };
+
+.form_label-wrapper{
+    padding: 8px 5px;
+}
 
 .form_select{
     display: block;
     width: $formComponentWidth;
     height: $formComponentHeight;
-    border: 1px solid $p2_grayPurple;
-    background: $p2_yellow;
-    border-radius: 10px;
+    border: 1px solid $p3_5;
+    background: $p3_2;
+    border-radius: 50px;
     font-family: $mainFont;
-    font-size: 1.5em;
+    letter-spacing: 5px;
+    padding: 0 3px 5px 10px;
+    font-size: 1.3em;
+    option{
+        font-family: $mainFont;
+        letter-spacing: 5px;
+        letter-spacing: 7px;
+    }
 };
 
 .form_range{
     display: block;
     -webkit-appearance: none;
-    background: $p2_yellow;
+    background: $p3_2;
+    border: 1px solid $p3_5;
     outline: none;
+    border-radius: 50px;
     // opacity: 0.7;
     -webkit-transition: .2s;
     transition: opacity .2s;
@@ -32,22 +46,121 @@ $formComponentHeight: 30px;
 
 }
 
-// .form_range:hover {
-//     opacity: 1;
-// }
-
 .form_range::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 25px;
-    height: 25px;
-    background: $p2_grayPurple;
+    width: $formComponentHeight;
+    height: $formComponentHeight;
+    background: $p3_4;
+    border: 1px solid $p3_5;
+    border-radius: 100%;
     cursor: pointer;
 }
 
 .form_range::-moz-range-thumb {
     width: 25px;
     height: 25px;
-    background: $p2_grayPurple;
+    background: $p3_4;
     cursor: pointer;
 }
+
+.form_range-value{
+    font-family: $pixelFont !important;
+    font-weight: 900 !important;
+    color: $p3_3 !important;
+}
+
+.form_text{
+    display: block;
+    width: $formComponentWidth;
+    height: $formComponentHeight;
+    border: 1px solid $p3_5;
+    background: $p3_2;
+    border-radius: 50px;
+    font-family: $mainFont;
+    letter-spacing: 5px;
+    padding: 0 3px 5px 10px;
+    font-size: 1.3em;
+}
+
+.form_radio
+{
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     display: inline-block;
+     position: relative;
+     background-color: $p3_2;;
+     color: $p3_5;
+     top: 10px;
+     height: 30px;
+     width: 30px;
+     border: 1px solid $p3_5;
+     border-radius: 50px;
+     cursor: pointer;     
+     margin-right: 7px;
+     outline: none;
+}
+.form_radio:checked::before{
+     position: absolute;
+     font: 13px/1 'Open Sans', sans-serif;
+     left: 11px;
+     top: 7px;
+     content: '\02143';
+     transform: rotate(40deg);
+}
+
+.form_radio:hover{
+     background-color: $p3_2;
+}
+
+.form_radio:checked{
+     background-color: $p3_2;
+}
+
+.form_pic::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.form_pic::before {
+    content: 'upload pic';
+    display: inline-block;
+    background: $p3_2;
+    border: 1px solid $p3_5;
+    font-weight: lighter;
+    border-radius: 50px;
+    width: 200px;
+    height: 20px;
+    padding: 2px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    font-size: 1.2em; 
+    display: flex;
+    z-index: 5;
+    font-family: $mainFont;
+    letter-spacing: 10px;
+    text-align: center;
+    color: $p3_5;
+  }
+
+  .form_pic:hover::before {
+    border-color: $p3_5;
+  }
+
+  .form_pic:active::before {
+    background: $p3_2;
+  }
+
+  .form_image_input_wrapper{
+    display: grid;
+  }
+
+  .pic_preview{
+    border-radius: 50px;
+    height: auto;
+    width: 200px;
+    border: 8px outset purple;
+    margin-bottom: 5px;
+  }

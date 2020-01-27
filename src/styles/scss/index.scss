@@ -2,5 +2,14 @@
 @import './form.scss';
 
 body{
-    // background-image: url("%PUBLIC_URL%/mxSMxYb.gif");
+    // gradient background
+    background: #fefcfd; /* Old browsers */
+    background: -moz-linear-gradient(top,  #fefcfd 0%, #bfcde0 44%, #5d5d81 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #fefcfd 0%,#bfcde0 44%,#5d5d81 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #fefcfd 0%,#bfcde0 44%,#5d5d81 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcfd', endColorstr='#5d5d81',GradientType=0 ); /* IE6-9 */
+    overflow: scroll;
+    font-family: $mainFont;
+    letter-spacing: 10px;
+    max-height: 100vh;
 };
